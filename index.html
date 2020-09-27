@@ -5,88 +5,182 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="keywords" content="ZONA FIT, ENERGIA POSITIVA, GIMNASIO SAN JOSE, ENTRENAMIENTOS PERSONALIZADOS, FUNCIONAL, FIGHT DO, GAP, X55, GIMNASIA CONSCIENTE, VITALIDAD, APTITUD, SALUD FISICA, SALUD MENTAL">
 		<meta name="description" content="Un ambiente sano y agradable donde podrás entrenarte al ritmo de la música, liberar las energías del día y sentirte bien con vos mismo!">
-		<title>Zona Fit</title>
+		<title>ZonaFit</title>
 
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- CSS only -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<!--animate-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 		<link rel="stylesheet" href="sass/css/css-estilo.css">
 	<body>
-		<header class="header">
-			<div id="img-logo" class="animate__animated animate__pulse">
-				<a href="index.html" class="logo"><img src="multimedia/logo.png" alt="Logo" width="160" height="130"></a>
-			</div>
-			<div class="container-fluid">
-				<div class="col">
-					<div class="row-4">
-						<input class="menu-btn" type="checkbox" id="menu-btn" />
-						<label class="menu-icon" for="menu-btn">
-							<span class="navicon"></span>
-						</label>
-						<ul class="menu">
-							<li>
-								<a class="seccion-link" class="ini" href="index.html">Inicio</a>
-							</li>
-							<li>
-								<a class="seccion-link" class="act" href="servicios.html">Actividades</a>
-							</li>
-							<li>
-								<a class="seccion-link" class="nos" href="nosotros.html">Nosotros</a>
-							</li>
-						</ul>
+		<div class="color-fondo">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<a class="navbar-brand animate__animated animate__zoomIn" href="index.html">
+				  <img class="logo-zonafit" src="multimedia/zonafit.png" alt="Zona Fit" width="150">
+			  </a>
+				<button class="navbar-toggler estilo-btn" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+			  </button>
+				<div class="collapse navbar-collapse secciones" id="navbarResponsive">
+				  <ul class="navbar-nav ml-auto items">
+					  <li class="nav-item active">
+						  <a class="nav-link" href="index.html">Inicio
+								<span class="sr-only">(current)</span>
+						  </a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="servicios.html">Actividades</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="nosotros.html">Nosotros</a>
+					  </li>
+				  </ul>
+				</div>
+	  		</nav>
+			<header class="header-top">
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<video src="multimedia/energia.mp4" class="d-block w-100" autoplay controls loop muted></video>
+						</div>	
+						<div class="carousel-item">
+							<video src="multimedia/beneficios.mp4" class="d-block w-100" autoplay controls loop muted></video>
+						</div>
+						<div class="carousel-item">
+							<video src="multimedia/grupo.mp4" class="d-block w-100" autoplay controls loop muted></video>
+						</div>
+					</div>			
+					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<section class="py-4 Responsive-center">
+				<div class="container"> 
+					<div class="container mt-40 seccion-index">
+						<h3 class="text-center fuente">NUESTRO ESPACIO</h3>
+						<div class="Responsive-muted mb-5 Responsive-center text-center">
+							<span><img src="multimedia/logo.png" alt="" width="400"></span>
+						</div>
+						<div class="nuestro-espacio">
+							<div class="row mt-30">
+								<div class="col-md-4 col-sm-6">
+									<div class="box3">
+										<img src="multimedia/energiaPositiva.png">
+										<div class="box-content">
+											<p class="description">
+												Nuestro lema "Energía Positiva" fundamenta clases donde prima el acompañamiento grupal y personalizado. 
+												El objetivo principal es la superación personal, la búsqueda y construcción de tu mejor versión, 
+												esta útlima basada en conceptos de salud física y psíquica, teniendo en cuenta la estética.									
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="box3">
+										<img src="multimedia/beneficios.png">
+										<div class="box-content">
+											<p class="description">
+												Nuestra modalidad de clases grupales de una hora de duración combina entrenamientos cardiovasculares 
+												con movimientos de peso corporal, y ejercicios pliométricos a base de contracciones. 
+												Estos consiguen  beneficios  como <strong>tonificación, aumento de fuerza, resistencia, 
+												capacidad cardiovascular, equilibrio, coordinación y defininicón de musculatura</strong>.  
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="box3">
+										<img src="multimedia/musica.png">
+										<div class="box-content">
+											<p class="description">
+												La música es la gran motivadora, consigue mayor intensidad, fuerza y energía en cada movimiento. 
+												Te lleva a realizar acciones que seguramente piensas sos incapaz de lograrlas.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="forma-padding">
+							<h3 class="text-center fuente">ENTRENAMIENTO</h3>
+						</div>
+						<div class="row mt-30 entrenamiento">
+							<div class="col-md-4 col-sm-6">
+								<div class="box3">
+									<img src="multimedia/entrada-en-calor.png">
+									<div class="box-content">
+										<p class="description">
+											Prepara nuestro organismo para la actividad mediante un calentamiento cardiovascular. Los músculos y
+											las articulaciones alcanzarán una temperatura mínima, provocando mayor elasticidad y flexibilidad, 
+											mejorando notablemente la oxigenación, buscando aumentar la destreza física.
+											Estas actividades varían de acuerdo al trabajo muscular designado para la rutina.								
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="box3">
+									<img src="multimedia/actividad.png">
+									<div class="box-content">
+										<p class="description">
+											Rutina Total Body: Trabajo muscular anaeróbico y areróbico de velocidad, coordinación y potencia (saltos, traslados, aterrizajes). Combina ejercicios 
+											relacionados al box y artes marciales.
+											<br>
+											Grupo Muscular Específico: Trabajo localizado de repeticiones progresivas donde se utiliza el peso del cuerpo y/o carga. 
+											Se utilizan elementos como discos, steps, barras, ketbell, bandas.  
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="box3">
+									<img src="multimedia/vuelta-a-la-calma.png">
+									<div class="box-content">
+										<p class="description">
+											El estiramiento facilita la recuperación muscular en menor tiempo después de un gran esfuerzo, reabsorve con mayor rapidez
+											el ácido láctico generado, evita tensión de la musculatura y disminuye la probabilidad de sobrecarga o lesión.
+											<br>
+											El mecanismo de la relajación guiada ayuda a mantener el cuerpo y la mente en estado de relajación 
+											propiciando un descanso más profundo.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</header>
-		<main>
-			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<video src="multimedia/energia.mp4" class="d-block w-100" autoplay controls loop muted></video>
-					</div>	
-					<div class="carousel-item">
-						<video src="multimedia/beneficios.mp4" class="d-block w-100" autoplay controls loop muted></video>
-					</div>
-					<div class="carousel-item">
-						<video src="multimedia/grupo.mp4" class="d-block w-100" autoplay controls loop muted></video>
-					</div>
-				</div>			
-				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</main>
+		</section>
 		<footer class="flex-rw">
 			<section class="footer-social-section flex-rw">
-				<span class="footer-social-overlap social-connect" id="color-footer">
-					CONTACTATE 
-					<span class="footer-social-small">con</span> 
-					NOSOTROS
-				</span>
+				<span class="footer-social-overlap social-connect size-letter" id="color-footer"> <strong>CONTACTATE</strong></span>
 				<span class="footer-social-overlap footer-social-icons-wrapper">
 					<a href="https://www.facebook.com/zonafit" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
 					<a href="http://instagram.com/zonafit_ep" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
-					<a href="https://api.whatsapp.com/send?phone=543447415781text=Hola!%20Quiero%20saber%20más%20info%20sobre" class="generic-anchor" target="_blank" title="WhastApp" itemprop="significantLink"><i class="fa fa-whatsapp"></i></a>
+					<a href="https://api.whatsapp.com/send?phone=543447415781Responsive=Hola!%20Quiero%20saber%20más%20info%20sobre" class="generic-anchor" target="_blank" title="WhastApp" itemprop="significantLink"><i class="fa fa-whatsapp"></i></a>
 				</span>
 			</section>
 		</footer>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-		
 	</body>
 </html>
